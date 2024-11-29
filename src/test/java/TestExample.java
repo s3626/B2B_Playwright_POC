@@ -3,7 +3,6 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.*;
 
 import org.junit.jupiter.api.*;
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.*;
 
 @UsePlaywright
 public class TestExample {
