@@ -10,10 +10,10 @@ public class TestExample {
     @Test
     void test(Page page) {
         page.navigate("http://lac-phpapp-s01.dc.lac.internal/php/leaseportal/login");
-        page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Change language")).click();
         page.getByPlaceholder("Benutzername").click();
         page.getByPlaceholder("Benutzername").fill("tester.haufe");
         page.getByPlaceholder("Benutzername").press("Tab");
-        page.getByPlaceholder("Passwort").fill("test1234!");
+        page.getByPlaceholder("Passwort").fill("test1234");
+        page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Einloggen")).click();
     }
 }
